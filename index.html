@@ -1,146 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-  <!-- Basic Page Needs
-  ----------------------------------------------------- -->
+  <!-- Basic Page Needs --------------------------------->
   <meta charset="utf-8">
   <title>KT Minckler | Web Developer & Multi-Disciplinary Designer</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Personal programming portfolio for Kathleen Minckler">
+  <meta name="author" content="Kathleen Minckler">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Mobile Specific Metas
-  -------------------------------------------------- -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-   <!-- FONT
-  ------------------------------------------------------ -->
+  <!-- FONT --------------------------------------------->
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 
-  <!-- CSS
-  -------------------------------------------------- -->
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-  <!-- Favicon
-  -------------------------------------------------- -->
-  <link rel="icon" type="image/png" href="illustration/images/favicon.png">
+  <!-- Favicon ------------------------------------------>
+  <link rel="icon" type="image/png" href="img/favicon.png">
 
-  <!---Scripts------------------------------------------->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-  <script src="/scripts/validate.js"></script>
+  <!-- CSS ---------------------------------------------->
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Scripts ------------------------------------------>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
 </head>
-  <body>
 
-    <!------------------ Navigation bar -------------------------->
-    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top transparent">
-      <div class="container">
-    <!------------------ Button to expand appears when viewport is too small ------------->
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="nav-links-button">
+<body>
+  <!-- Navigation bar -------------------------->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top justify-content-between">
+    <div class="container-fluid">
+      <!------------------ Icon or brand ---------------------->
+      <a class="navbar-brand mx-2" id="logo" href="#">KTMinks</a>
+      <!-- Button to expand  when viewport is too small ------->
+      <div class="ms-auto">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-    <!------------------ Icon or brand ---------------------->
-        <a class="navbar-brand" id="logo" href="#">KTMinks</a>
-    <!------------------ Collapsible links ----------------->
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav navbar-toggler-right" id="nav-links">
-            <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-            <a class="nav-item nav-link" href="#about">About</a>
-            <a class="nav-item nav-link" href="#contact">Contact</a>
-          </div>
-        </div>
       </div>
-    </nav>
-
-    <!---------------------- Home splash ------------------->
-
-    <div class="container-fluid px-0">
-      <div id="home">
-        <img src="/illustration/images/selfie.jpg" id="home" class="img-fluid semi-transparent" width=100%>
+      <!------------------ Collapsible links ------------------>
+      <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ms-auto">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
+
+  <!---------------------- Home splash ------------------->
+
+  <div class="container-fluid px-0">
+    <div id="home">
+      <img src="img/illustrations/selfie.jpg" id="home" class="img-fluid semi-transparent" width=100%>
+    </div>
 
     <!------------- Portfolio section ----------------->
-      <div class="row pt-2 text-center" id="portfolio">
-        <div class="col-12">
-          <h1>My Work</h1>
-        </div>
-        <div class="col-md-3 offset-2">
-          <div class="img-thumbnail">
-            <a href="/illustration/index.html" target="_blank">
-               <img src="fcckt/ktminx.png" class="rounded img-responsive" alt="Portfolio site">
-            </a>
-            <div class="caption">
-              Illustration portfolio site, plus rock, paper, scissors!
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-2">
-          <div class="img-thumbnail">
-            <a href="/twisted/index.php" target="_blank">
-              <img src="fcckt/twisted.png" class="rounded img-responsive" alt="Twisted Dragon Forge">
-            </a>
-            <div class="caption">
-              Twisted Dragon Forge custom blacksmithing website
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-2">
-          <div class="img-thumbnail">
-            <a href="/weatherapi/index.html" target="_blank">
-              <img src="fcckt/weatherapp.png" class="rounded img-responsive" alt="Wunderground API">
-            </a>
-            <div class="caption">
-              Local Weather, Wunderground API
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-2">
-          <div class="img-thumbnail">
-            <a href="https://codepen.io/ktminks/full/zZPjBv/" target="_blank">
-              <img src="fcckt/wikiAPI.png" class="rounded img-responsive" alt="Wikipedia API">
-            </a>
-            <div class="caption">
-              Wikipedia Search App API
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-2">
-          <div class="img-thumbnail">
-            <a href="https://codepen.io/ktminks/full/rywByR/" target="_blank">
-              <img src="fcckt/quoteable.png" class="rounded img-responsive" alt="Mindfulness quote generator">
-            </a>
-            <div class="caption">
-              Mindfulness quote generator
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 offset-2">
-          <div class="img-thumbnail">
-            <a href="https://codepen.io/ktminks/full/qrywwg/" target="_blank">
-              <img src="fcckt/calculator.png" class="rounded img-responsive" alt="Javascript calculator">
-            </a>
-            <div class="caption">
-              Javascript calculator
-            </div>
+    <div class="row pt-2 text-center" id="portfolio">
+      <div class="col-12">
+        <h1>My Work</h1>
+      </div>
+      <div class="col-md-3 offset-2">
+        <div class="img-thumbnail">
+          <a href="illustration.html" target="_blank">
+            <img src="fcckt/ktminx.png" class="rounded img-responsive" alt="Portfolio site">
+          </a>
+          <div class="caption">
+            Illustration portfolio using basic HTML, CSS, and Magnific Popup
           </div>
         </div>
       </div>
+      <div class="col-md-3 offset-2">
+        <div class="img-thumbnail">
+          <a href="/twisted/index.php" target="_blank">
+            <img src="fcckt/twisted.png" class="rounded img-responsive" alt="Twisted Dragon Forge">
+          </a>
+          <div class="caption">
+            Twisted Dragon Forge custom blacksmithing website
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 offset-2">
+        <div class="img-thumbnail">
+          <a href="/weatherapi/index.html" target="_blank">
+            <img src="fcckt/weatherapp.png" class="rounded img-responsive" alt="Wunderground API">
+          </a>
+          <div class="caption">
+            Local Weather, Wunderground API
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 offset-2">
+        <div class="img-thumbnail">
+          <a href="https://codepen.io/ktminks/full/zZPjBv/" target="_blank">
+            <img src="fcckt/wikiAPI.png" class="rounded img-responsive" alt="Wikipedia API">
+          </a>
+          <div class="caption">
+            Wikipedia Search App API
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 offset-2">
+        <div class="img-thumbnail">
+          <a href="https://codepen.io/ktminks/full/rywByR/" target="_blank">
+            <img src="fcckt/quoteable.png" class="rounded img-responsive" alt="Mindfulness quote generator">
+          </a>
+          <div class="caption">
+            Mindfulness quote generator
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 offset-2">
+        <div class="img-thumbnail">
+          <a href="https://codepen.io/ktminks/full/qrywwg/" target="_blank">
+            <img src="fcckt/calculator.png" class="rounded img-responsive" alt="Javascript calculator">
+          </a>
+          <div class="caption">
+            Javascript calculator
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!---------- About Me ------------------->
-      <div class="row text-center grayish" id="about">
-        <div class="col-md-6">
-          <img src="img/kt.jpg" id="kt">
-        </div>
-        <div class="col-md-4">
-          <h2>About KT Minks:</h2>
-          <p>Web developer & multi-disciplinary designer.</p>
-          <p class="bio">Altruist, adventurer, philomath. I love animals, good food, and better people. I have a simultaneous passion for both realism and cartoons, science and philosophy, solitude and compersion. I will forever be fascinated by that which we call the human condition, and the things we do to communicate to one another what this means to each of us.</p>
-          <p class="bio">I am currently pursuing my bachelor's degree and seeking a programming internship. I'm most experienced with HTML/CSS/Javascript development, illustration, and Photoshop image manipulation.</p>
-        </div>
+    <div class="row text-center grayish" id="about">
+      <div class="col-md-6">
+        <img src="img/kt.jpg" id="kt">
       </div>
+      <div class="col-md-4">
+        <h2>Web developer & multi-disciplinary designer.</h3>
+          <h3>Bio:</h3>
+          <p class="bio">
+            Altruist, adventurer, philosopher. I love animals, good people, and great food. I have a simultaneous passion for both realism and cartoons, science and philosophy, solitude and compersion. I remain fascinated by the human condition, and the things we do to communicate to one another what this means to us.
+          </p>
+          <h3>Experience:</h3>
+          <p class="bio">
+            Most experienced with: front-end development, illustration, and Photoshop image manipulation<br>
+            Some experience with: back-end languages and databases
+          </p>
+          <h3>Status:</h3>
+          <p class="bio">
+            Studying: bachelor's degree in CS<br>
+            Seeking: internship/apprenticeship in front-end web development
+          </p>
+      </div>
+    </div>
 
     <!------------- Footer ---------->
     <div class="navbar navbar-fixed-bottom transparent" id="contact">
@@ -150,16 +166,16 @@
             <h3 class="text-center">Contact me at any of these links!</h3>
           </div>
           <div class="col-md-6">
-            <p class="text-muted">&copy; KT Minckler 2017</p>
+            <p class="text-muted">&copy; KT Minckler 2021</p>
           </div>
           <div class="col-md-6">
             <p>
-     <!--------- Social icons ----------->
-              <a href="https://www.facebook.com/ktminks" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a href="https://kminckler.deviantart.com" target="_blank"><i class="fa fa-deviantart"></i></a>
-              <a href="https://plus.google.com/u/0/+KatieMinckler" target="_blank"><i class="fa fa-google-plus"></i></a>
-              <a href="https://www.linkedin.com/in/ktminks" target="_blank"><i class="fa fa-linkedin"></i></a>
-              <a href="https://github.com/ktminks" target="_blank"><i class="fa fa-github"></i></a>
+              <!--------- Social icons ----------->
+              <a href="https://www.facebook.com/ktminks" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://kminckler.deviantart.com" target="_blank"><i class="fab fa-deviantart"></i></a>
+              <a href="https://plus.google.com/u/0/+KatieMinckler" target="_blank"><i class="fab fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/in/ktminks" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/ktminks" target="_blank"><i class="fab fa-github"></i></a>
             </p>
           </div>
         </div>
@@ -167,4 +183,5 @@
     </div>
   </div>
 </body>
+
 </html>
