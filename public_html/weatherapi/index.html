@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ----------------------------------------------------- -->
+  <meta charset="utf-8">
+  <title>KT Minckler | Wunderground API App</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  -------------------------------------------------- -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- FONT
+  ------------------------------------------------------ -->
+  <link href="https://fonts.googleapis.com/css?family=Abel|Aclonica" rel="stylesheet">
+
+  <!-- CSS
+  -------------------------------------------------- -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <!-- Favicon
+  -------------------------------------------------- -->
+  <link rel="icon" type="image/png" href="illustration/images/favicon.png">
+
+  <!---Scripts------------------------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+
+</head>
+  <body>
+
+    <div class="container-fluid text-center">
+  <div class="container text-center">
+    <h1>Local Weather App</h1>
+    <h3>My local weather station:</h3>
+    <p id="loc">City, country</p>
+    <p id="weather">
+      <button class = 'btn btn-primary'>
+        <span id="temp">Temperature:</span>
+      </button>
+      <button class='btn btn-secondary'>
+        <span id="desc">Description:</span>
+      </button>
+      <span id="icon"></span>
+    </p>
+  </div>
+  <footer>
+    <p id="credit"><br>Local weather provided by <img src="https://icons.wxug.com/logos/PNG/wundergroundLogo_4c_rev_horz.png" id="wulogo"></p>
+    <p id="sig">Designed and coded by KT Minckler</p>
+  </footer>
+</div>
+
+</body>
+</html>

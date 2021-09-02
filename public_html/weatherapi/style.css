@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  background-size: cover;
+  font-family: Abel, sans-serif;
+  color: #2A83BE;
+}
+.container {
+  margin-top: 5%;
+  background-color: rgba(225, 225, 225, .15);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 5px 8px 15px rgba(5,5,5,.2);
+}
+h1 {
+  font-family: Aclonica, monospace!important;
+}
+#credit {
+  padding: -10px;
+}
+#wulogo {
+  height: 1.25em;
+}
+footer {
+  font-size: 80%;
+  color: #fff;
+}
