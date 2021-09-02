@@ -30,7 +30,7 @@
 
 <body>
   <!-- Navigation bar -------------------------->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top justify-content-between">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top justify-content-between">
     <div class="container-fluid">
       <!------------------ Icon or brand ---------------------->
       <a class="navbar-brand mx-2" id="logo" href="#">KTMinks</a>
@@ -68,64 +68,58 @@
     </div>
 
     <!------------- Portfolio section ----------------->
-    <div class="row pt-2 text-center" id="portfolio">
-      <div class="col-12">
-        <h1>My Work</h1>
-      </div>
-      <div class="col-md-3 offset-2">
+    <div class="d-flex flex-column justify-content-between" id="portfolio">
+      <h1 class="align-self-center">My Work</h1>
+      <div class="d-flex flex-row flex-wrap justify-content-center">
+
         <div class="img-thumbnail">
           <a href="illustration.html" target="_blank">
-            <img src="fcckt/ktminx.png" class="rounded img-responsive" alt="Portfolio site">
+            <img src="img/ktminx.png" class="rounded img-responsive" alt="Portfolio site">
           </a>
           <div class="caption">
             Illustration portfolio using basic HTML, CSS, and Magnific Popup
           </div>
         </div>
-      </div>
-      <div class="col-md-3 offset-2">
+
         <div class="img-thumbnail">
           <a href="/twisted/index.php" target="_blank">
-            <img src="fcckt/twisted.png" class="rounded img-responsive" alt="Twisted Dragon Forge">
+            <img src="img/twisted.png" class="rounded img-responsive" alt="Twisted Dragon Forge">
           </a>
           <div class="caption">
             Twisted Dragon Forge custom blacksmithing website
           </div>
         </div>
-      </div>
-      <div class="col-md-3 offset-2">
+
         <div class="img-thumbnail">
-          <a href="/weatherapi/index.html" target="_blank">
-            <img src="fcckt/weatherapp.png" class="rounded img-responsive" alt="Wunderground API">
+          <a href="local-weather/index.html" target="_blank">
+            <img src="img/weatherapp.png" class="rounded img-responsive" alt="Wunderground API">
           </a>
           <div class="caption">
-            Local Weather, Wunderground API
+            Local Weather with OpenWeather API
           </div>
         </div>
-      </div>
-      <div class="col-md-3 offset-2">
+
         <div class="img-thumbnail">
-          <a href="https://codepen.io/ktminks/full/zZPjBv/" target="_blank">
-            <img src="fcckt/wikiAPI.png" class="rounded img-responsive" alt="Wikipedia API">
+          <a href="wiki-search/index.html" target="_blank">
+            <img src="img/wikiAPI.png" class="rounded img-responsive" alt="Wikipedia API">
           </a>
           <div class="caption">
             Wikipedia Search App API
           </div>
         </div>
-      </div>
-      <div class="col-md-3 offset-2">
+
         <div class="img-thumbnail">
-          <a href="https://codepen.io/ktminks/full/rywByR/" target="_blank">
-            <img src="fcckt/quoteable.png" class="rounded img-responsive" alt="Mindfulness quote generator">
+          <a href="quote-generator/index.html" target="_blank">
+            <img src="img/quoteable.png" class="rounded img-responsive" alt="Mindfulness quote generator">
           </a>
           <div class="caption">
             Mindfulness quote generator
           </div>
         </div>
-      </div>
-      <div class="col-md-3 offset-2">
+
         <div class="img-thumbnail">
-          <a href="https://codepen.io/ktminks/full/qrywwg/" target="_blank">
-            <img src="fcckt/calculator.png" class="rounded img-responsive" alt="Javascript calculator">
+          <a href="calculator/calculator.html" target="_blank">
+            <img src="img/calculator.png" class="rounded img-responsive" alt="Javascript calculator">
           </a>
           <div class="caption">
             Javascript calculator
@@ -135,50 +129,40 @@
     </div>
 
     <!---------- About Me ------------------->
-    <div class="row text-center grayish" id="about">
-      <div class="col-md-6">
-        <img src="img/kt.jpg" id="kt">
-      </div>
-      <div class="col-md-4">
-        <h2>Web developer & multi-disciplinary designer.</h3>
-          <h3>Bio:</h3>
-          <p class="bio">
-            Altruist, adventurer, philosopher. I love animals, good people, and great food. I have a simultaneous passion for both realism and cartoons, science and philosophy, solitude and compersion. I remain fascinated by the human condition, and the things we do to communicate to one another what this means to us.
-          </p>
-          <h3>Experience:</h3>
-          <p class="bio">
-            Most experienced with: front-end development, illustration, and Photoshop image manipulation<br>
-            Some experience with: back-end languages and databases
-          </p>
-          <h3>Status:</h3>
-          <p class="bio">
-            Studying: bachelor's degree in CS<br>
-            Seeking: internship/apprenticeship in front-end web development
-          </p>
+    <div class="container-fluid d-flex flex-wrap justify-content-center grayish p-5">
+      <img src="img/kt.jpg" id="kt">
+      <div class="container d-flex flex-column justify-content-center" id="about">
+        <h2>Web developer & multi-disciplinary designer.</h2>
+        <h3>Bio:</h3>
+        <p class="bio">
+          Altruist, adventurer, philosopher. I love animals, good people, and great food. I have a simultaneous passion for both realism and cartoons, science and philosophy, solitude and compersion. I remain fascinated by the human condition, and the things we do to communicate to one another what this means to us.
+        </p>
+        <h3>Experience:</h3>
+        <p class="bio">
+          Most experienced with: front-end development, illustration, and Photoshop image manipulation<br>
+          Some experience with: back-end languages and databases
+        </p>
+        <h3>Status:</h3>
+        <p class="bio">
+          Studying: bachelor's degree in CS<br>
+          Seeking: internship/apprenticeship in front-end web development
+        </p>
       </div>
     </div>
 
     <!------------- Footer ---------->
-    <div class="navbar navbar-fixed-bottom transparent" id="contact">
-      <div class="container">
-        <div class="row footer text-center">
-          <div class="col-md-12">
-            <h3 class="text-center">Contact me at any of these links!</h3>
-          </div>
-          <div class="col-md-6">
-            <p class="text-muted">&copy; KT Minckler 2021</p>
-          </div>
-          <div class="col-md-6">
-            <p>
-              <!--------- Social icons ----------->
-              <a href="https://www.facebook.com/ktminks" target="_blank"><i class="fab fa-facebook"></i></a>
-              <a href="https://kminckler.deviantart.com" target="_blank"><i class="fab fa-deviantart"></i></a>
-              <a href="https://plus.google.com/u/0/+KatieMinckler" target="_blank"><i class="fab fa-google-plus"></i></a>
-              <a href="https://www.linkedin.com/in/ktminks" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://github.com/ktminks" target="_blank"><i class="fab fa-github"></i></a>
-            </p>
-          </div>
-        </div>
+    <div class="navbar navbar-fixed-bottom transparent d-flex flex-column justify-content-center" id="contact">
+      <h3 class="text-center">Contact me at any of these links!</h3>
+      <div class="d-flex justify-content-between">
+        <p class="text-muted">&copy; KT Minckler 2021</p>
+        <p>
+          <!--------- Social icons ----------->
+          <a href="https://www.facebook.com/ktminks" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://kminckler.deviantart.com" target="_blank"><i class="fab fa-deviantart"></i></a>
+          <a href="https://plus.google.com/u/0/+KatieMinckler" target="_blank"><i class="fab fa-google-plus"></i></a>
+          <a href="https://www.linkedin.com/in/ktminks" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/ktminks" target="_blank"><i class="fab fa-github"></i></a>
+        </p>
       </div>
     </div>
   </div>

@@ -42,35 +42,21 @@ body {
 }
 /* ---------- ABOUT ------------*/
 #about {
-  padding: 20px;
   color: white;
 }
 #kt{
   border: solid white;
   border-radius: 50%;
-  width: 60%;
-  margin: 25px;
+  width: 20vw;
+  margin: 2vw;
 }
 #about h2 {
   font-family: 'Shadows Into Light', cursive;
-  padding: 20px;
-  margin: 5vh 0vh 2vh 0vh;
-}
-p.bio {
-  padding: 12px;
 }
 
 /* ----------- CONTACT FORM -----*/
 #contact {
   color: white;
-  padding: 40px;
-}
-#contact-me {
-  color: white;
-}
-#submission {
-  width: 20%;
-  align: right;
 }
 #contact h3 {
   font-family: 'Shadows Into Light', cursive;
@@ -84,8 +70,4 @@ a:hover, a:active{
 }
 i{
   padding: 5px;
-}
-.footer{
-  padding: 5px;
-  font-size: 18px;
 }
