@@ -31,14 +31,13 @@ body {
 #portfolio img {
   width: 100%;
 }
-.img-thumbnail {
-  margin: 20px;
-  padding: 10px;
+#portfolio > * {
+  margin: 1vw;
 }
-#portfolio h1 {
+h1 {
   color: white;
   font-family: 'Shadows Into Light', cursive;
-  padding: 20px;
+  padding: 1vw;
 }
 /* ---------- ABOUT ------------*/
 #about {

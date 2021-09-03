@@ -9,3 +9,10 @@ h1 {
 footer {
   font-size: .7em;
 }
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color:cadetblue;
+}

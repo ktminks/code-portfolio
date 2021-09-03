@@ -19,7 +19,7 @@ $(document).ready(function () {
                 /* API sends us info in an array.
                   data[0] is search term
                   data[1][i] is array of search result titles
-                  data[2][i] is array of search result descriptions
+                  data[2][i] is array of search result descriptions (often empty)
                   data[3][i] is array of search result links */
 
                 //before returning new results, wipe old results
@@ -27,7 +27,7 @@ $(document).ready(function () {
                 //loop through entries of result
                 for (var i = 0; i < data[1].length; i++) {
                     //target output list, on each loop insert each result as the first child element
-                    $("#output").append("<a href='" + data[3][i] + "' target='_blank' class='text-left'><h3>" + data[1][i] + "</h3></a><br>" + data[2][i] + "<br>" + "<hr>");
+                    $("#output").append(`<li class="hit"><a href="${data[3][i]}" target='_blank'><h4>${data[1][i]}</h4></a></li>`);
                 };
             },
             //if get request fails, throw error alert
