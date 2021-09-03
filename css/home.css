@@ -27,11 +27,11 @@ body {
   font-family: 'shadows into light', cursive;
 }
 
-/*------------ PORFOLIO ------*/
+/*------------ PORTFOLIO ------*/
 #portfolio img {
   width: 100%;
 }
-#portfolio > * {
+.card {
   margin: 1vw;
 }
 h1 {
